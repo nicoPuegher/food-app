@@ -1,0 +1,15 @@
+main {
+  position: relative;
+  height: calc(100vh - 7rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    height: calc(100vh - 8rem);
+    padding-top: 10rem;
+    align-items: flex-start;
+  }
+}
