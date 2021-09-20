@@ -1,0 +1,22 @@
+.cart {
+  height: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #2c333d;
+}
+
+.cart span {
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cart {
+    height: 4.5rem;
+  }
+
+  .cart span {
+    padding-bottom: 0.15rem;
+  }
+}

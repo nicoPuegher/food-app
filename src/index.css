@@ -1,4 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+:root {
+  --main-font: 'Poppins', sans-serif;
+  --secondary-font: 'Noto Sans JP', sans-serif;
+
+  --white: #ffffff;
+  --gray: #eeeeee;
+  --dark-gray: #8b8b8b;
+  --red: #ed4e53;
+  --yellow: #fccc4b;
+  --dark-blue: #1d2228;
+  --background: #14171b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-family: var(--secondary-font);
+  color: var(--dark-blue);
+  background-color: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+button {
+  font-family: var(--main-font);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gray);
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 0.25rem 1.5rem;
+  border: none;
+  border-radius: 7px;
+  color: var(--gray);
+  background-color: var(--red);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+  }
 }
