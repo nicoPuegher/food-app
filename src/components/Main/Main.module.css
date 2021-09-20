@@ -13,3 +13,10 @@ main {
     align-items: flex-start;
   }
 }
+
+@media (min-width: 1025px) {
+  main {
+    padding-top: 0;
+    align-items: center;
+  }
+}

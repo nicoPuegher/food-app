@@ -38,36 +38,99 @@ button {
   font-family: var(--main-font);
 }
 
+p,
+span {
+  font-size: 1.55rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 900;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.025rem;
   text-transform: uppercase;
   color: var(--white);
 }
 
+p {
+  line-height: 1.5;
+  letter-spacing: 0.025rem;
+}
+
 span {
-  font-size: 1.4rem;
   font-weight: 700;
   color: var(--gray);
+}
+
+hr {
+  width: 4rem;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 0.5rem;
+  border-color: var(--yellow);
 }
 
 button {
   font-size: 1.5rem;
   padding: 0.25rem 1.5rem;
   border: none;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   color: var(--gray);
   background-color: var(--red);
 }
 
+@media (max-width: 279px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  p,
+  span {
+    font-size: 1.45rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  p,
+  span {
+    font-size: 1.45rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  p,
+  span {
+    font-size: 1.65rem;
+  }
+}
+
 @media (min-width: 768px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+
   h2 {
     font-size: 2.4rem;
   }
 
+  p,
   span {
-    font-size: 1.5rem;
+    font-size: 1.95rem;
+  }
+
+  hr {
+    width: 6rem;
+    border-width: 1rem;
   }
 
   button {

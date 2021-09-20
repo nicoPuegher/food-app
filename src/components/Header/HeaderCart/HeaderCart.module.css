@@ -8,6 +8,7 @@
 }
 
 .cart span {
+  font-size: 1.4rem;
   margin-right: 1rem;
 }
 
@@ -17,6 +18,7 @@
   }
 
   .cart span {
+    font-size: 1.5rem;
     padding-bottom: 0.15rem;
   }
 }
