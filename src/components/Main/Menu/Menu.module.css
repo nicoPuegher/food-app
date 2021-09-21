@@ -1,0 +1,44 @@
+.container {
+  height: 85%;
+  position: relative;
+  margin: 0 2rem;
+  padding: 3rem 2rem;
+  border-radius: 0.7rem;
+  background-color: var(--white);
+  overflow: scroll;
+  z-index: 2;
+}
+
+.container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container hr {
+  margin: 2rem auto 2rem auto;
+}
+
+.container ul hr:last-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 65rem;
+    margin: 0;
+    padding: 8rem 6rem;
+  }
+
+  .container hr {
+    margin: 1.55rem auto 2.5rem auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 75rem;
+    height: unset;
+    max-height: 85%;
+  }
+}
