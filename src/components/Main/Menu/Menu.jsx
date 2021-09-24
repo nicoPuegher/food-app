@@ -1,38 +1,25 @@
 import React from 'react';
 import styles from './Menu.module.css';
 import MenuItem from './MenuItem/MenuItem';
-import MenuForm from './MenuForm/MenuForm';
+import menuItems from '../../../helpers/menuItems';
 
-const Menu = () => (
-  <section className={styles.container}>
-    <ul>
-      <li>
-        <MenuItem />
-        <MenuForm />
-      </li>
-      <hr />
-      <li>
-        <MenuItem />
-        <MenuForm />
-      </li>
-      <hr />
-      <li>
-        <MenuItem />
-        <MenuForm />
-      </li>
-      <hr />
-      <li>
-        <MenuItem />
-        <MenuForm />
-      </li>
-      <hr />
-      <li>
-        <MenuItem />
-        <MenuForm />
-      </li>
-      <hr />
-    </ul>
-  </section>
-);
+const Menu = () => {
+  const menuList = menuItems.map((item) => (
+    <MenuItem
+      key={item.id}
+      id={item.id}
+      image={item.image}
+      name={item.name}
+      description={item.description}
+      price={item.price}
+    />
+  ));
+
+  return (
+    <section className={styles.container}>
+      <ul>{menuList}</ul>
+    </section>
+  );
+};
 
 export default Menu;
