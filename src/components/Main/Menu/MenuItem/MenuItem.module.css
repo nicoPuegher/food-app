@@ -36,12 +36,7 @@
   }
 }
 
-@media (min-width: 400px) and (max-width: 450px) {
-  .empanada img {
-    width: 8rem;
-    height: 8rem;
-  }
-
+@media (min-width: 321px) and (max-width: 450px) {
   .info span {
     font-size: 1.35rem;
   }
@@ -49,6 +44,13 @@
   .info span:nth-of-type(2) {
     font-size: 1.45rem;
     font-weight: 700;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  .empanada img {
+    width: 8rem;
+    height: 8rem;
   }
 }
 
