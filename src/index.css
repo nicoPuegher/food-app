@@ -131,12 +131,6 @@ input {
     font-size: 1.45rem;
   }
 }
-/* 
-@media (min-width: 321px) and (max-width: 399px) {
-  h3 {
-    font-size: 1.6rem;
-  }
-} */
 
 @media (min-width: 321px) and (max-width: 450px) {
   h3 {
