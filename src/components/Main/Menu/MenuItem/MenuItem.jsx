@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styles from './MenuItem.module.css';
 import MenuForm from '../MenuForm/MenuForm';
+import CartContext from '../../../../store/cartContext';
 
 const MenuItem = ({ id, image, name, description, price }) => {
+  const cartCtx = useContext(CartContext);
+
+  const addToCartHandler = (quantity) => {
+    cartCtx.addItem({
+      id,
+      name,
+      price,
+      quantity,
+    });
+  };
+
   const fixedPrice = `$${price.toFixed(2)}`;
 
   return (
@@ -23,10 +35,11 @@ const MenuItem = ({ id, image, name, description, price }) => {
             id: `itemForm_${id}`,
             type: 'number',
             min: '1',
-            max: '5',
+            max: '6',
             step: '1',
             defaultValue: '1',
           }}
+          onAddToCart={addToCartHandler}
         />
       </li>
       <hr />
