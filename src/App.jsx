@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CartProvider from './store/CartProvider';
 import Cart from './components/Cart/Cart';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
@@ -15,7 +16,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <CartProvider>
       {cartIsOpen && <Cart onCloseCart={closeCartHandler} />}
       <Header
         cartIsOpen={cartIsOpen}
@@ -23,7 +24,7 @@ const App = () => {
         onCloseCart={closeCartHandler}
       />
       <Main />
-    </>
+    </CartProvider>
   );
 };
 

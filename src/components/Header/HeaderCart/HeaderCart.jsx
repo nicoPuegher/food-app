@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styles from './HeaderCart.module.css';
+import CartContext from '../../../store/cartContext';
 
 const HeaderCart = ({ cartIsOpen, onOpenCart, onCloseCart }) => {
+  const cartCtx = useContext(CartContext);
+
+  const itemsQuantity = cartCtx.items.reduce(
+    (previousValue, item) => previousValue + item.quantity,
+    0
+  );
+
   const keyDownHandler = (event) => {
     if (cartIsOpen) {
       if (event.keyCode === 32 || event.keyCode === 13) {
@@ -24,7 +32,7 @@ const HeaderCart = ({ cartIsOpen, onOpenCart, onCloseCart }) => {
       tabIndex={0}
     >
       <span>Cart</span>
-      <span>0</span>
+      <span>{itemsQuantity}</span>
     </div>
   );
 };
