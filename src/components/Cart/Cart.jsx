@@ -11,10 +11,10 @@ const Cart = ({ onCloseCart }) => {
   const emptyCart = cartCtx.items.length === 0;
 
   const onRemoveHandler = (id) => {
-    console.log(id);
+    cartCtx.removeItem(id);
   };
   const onAddHandler = (item) => {
-    console.log(item);
+    cartCtx.addItem({ ...item, quantity: 1 });
   };
 
   const cartItems = cartCtx.items.map((item) => (
