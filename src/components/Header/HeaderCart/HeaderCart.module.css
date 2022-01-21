@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   border-radius: 7px;
+  cursor: pointer;
   background-color: #2c333d;
 }
 

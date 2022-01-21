@@ -1,0 +1,54 @@
+.nav {
+  position: relative;
+}
+
+.container {
+  font-size: 1.5rem;
+  position: relative;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  color: var(--gray);
+  background-color: var(--red);
+  z-index: 3;
+}
+
+.container i {
+  position: relative;
+  z-index: 3;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.7rem;
+  background-color: var(--red);
+  z-index: 1;
+}
+
+.menu button {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 2rem 6rem 2rem 2rem;
+  text-align: left;
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+.menu button:hover {
+  color: var(--red);
+  background-color: var(--gray);
+}
+
+.menu button.active {
+  font-weight: 700;
+  color: var(--white);
+}

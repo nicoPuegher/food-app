@@ -6,6 +6,7 @@ import Main from './components/Main/Main';
 
 const App = () => {
   const [cartIsOpen, setCartIsOpen] = useState(false);
+  const [navigation, setNavigation] = useState('home');
 
   const openCartHandler = () => {
     setCartIsOpen(true);
@@ -15,6 +16,10 @@ const App = () => {
     setCartIsOpen(false);
   };
 
+  const navigationHandler = (sectionName) => {
+    setNavigation(sectionName);
+  };
+
   return (
     <CartProvider>
       {cartIsOpen && <Cart onCloseCart={closeCartHandler} />}
@@ -22,8 +27,9 @@ const App = () => {
         cartIsOpen={cartIsOpen}
         onOpenCart={openCartHandler}
         onCloseCart={closeCartHandler}
+        onNavigation={navigationHandler}
       />
-      <Main />
+      <Main onNavigationChange={navigation} />
     </CartProvider>
   );
 };

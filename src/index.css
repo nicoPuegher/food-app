@@ -87,6 +87,7 @@ button {
   border: none;
   border-radius: 0.7rem;
   color: var(--gray);
+  cursor: pointer;
   background-color: var(--red);
 }
 
