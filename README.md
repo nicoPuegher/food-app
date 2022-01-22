@@ -1,6 +1,54 @@
-# Getting Started with Create React App
+# The Corner - Food App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### This is a fully responsive react web app called The Corner, a small startup. This is the frontend side and does not include the order feature.
+
+<br />
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Link](#link)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Available Scripts](#available-scripts)
+
+<br />
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the section depending on their device's screen size
+- Add menu items to the cart
+- Add or remove items inside the cart
+
+### Link
+
+- Live Site URL: [Firebase Hosting](https://food-app-a2a00.web.app/)
+
+## My process
+
+### Built with
+
+- HTML
+- CSS
+- Flexbox
+- React (Hooks, Context API, Portals)
+
+### What I learned
+
+- How to use Portals to show modals and don't overpopulate the HTML file with unnecessary elements.
+
+```js
+  return ReactDOM.createPortal(
+    <div>Component Here</div>,
+    document.getElementById('modal')
+  );
+```
 
 ## Available Scripts
 
@@ -28,43 +76,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
